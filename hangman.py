@@ -175,3 +175,4 @@ if __name__ == '__main__':
 	% time raw_result = test()
 	result = pd.DataFrame([x for x in raw_result],index=['word','guess','result','correct']).T
 	result['wrong_guess'] = list(map(lambda x,y: len(x)-len(y),result['guess'],result['correct']))
+
